@@ -3,37 +3,48 @@
 // Create a variable called 'myName' with a value that is your name. 
 
 // Code here
-
+let myName = "Arthur";
 //////////////////PROBLEM 2////////////////////
 
 // Create a variable called 'faveNum' with a value that is your favorite number. 
 
 //Code here
-
+ var faveNum = 7;
 //////////////////PROBLEM 3////////////////////
 
 // Create a variable called 'lovesCode' and assign it a value of true.
 
 //Code here
-
+ var lovesCode = "true";
 //////////////////PROBLEM 4////////////////////
 
 // Create a function called 'sum' that takes in two parameters, 'num1' and 'num2'. The function should return the sum of the two parameters.
 
 //Code here
-
+function sum(num1 , num2){
+	return num1 + num2;
+};
 //////////////////PROBLEM 5////////////////////
 
 // Create a function called 'lovesCodeChecker' that takes in a single parameter called 'x'. Check to see if 'x' is equal to true. If it is, return a true boolean. If 'x' does not equal true, return a false boolean.  
 
 //Code here
-
+function lovesCodeChecker(x){ 
+	if (x == true){
+		return true;
+	if (x == false){
+		return false;
+	}
+	};
+};
 //////////////////PROBLEM 6////////////////////
 
 // Create a function called 'oddChecker' that takes in one parameter, 'num'. Your function should check to see if the parameter is even or odd. If the parameter is odd, return 'the number is odd'. If the number is even, return 'the number is even'.
 
 //Code here
+function oddChecker(num){
 
+};
 //////////////////PROBLEM 7////////////////////
 
 // Create a function called 'iLove' that takes in two string parameters, 'name' and 'love'. Have the function take the two parameters and return a string that says "NAMEPARAM loves LOVEPARAM" with the appropriate parameters in the string. e.g. "Joseph loves music"
@@ -45,8 +56,9 @@
 // Create a copy of the faveColors array called 'colorCopy' using slice.
 const faveColors = ['red', 'green', 'black']
 
-//Code Here
 
+//Code Here
+faveColors.slice(1);
 //////////////////PROBLEM 9////////////////////
 
 // Add a fourth color to the end of the 'colorCopy' array using push.
@@ -56,7 +68,7 @@ const faveColors = ['red', 'green', 'black']
 //////////////////PROBLEM 10////////////////////
 
 // Create a new array called 'middleNums' from the numbers array that will capture only the middle numbers (2, 3, 4).
-const numbers = [1, 2, 3, 4, 5]
+
 
 //Code Here
 
@@ -65,6 +77,13 @@ const numbers = [1, 2, 3, 4, 5]
 // Create an object called 'me' that has the following keys: firstName, state, age, and greeter. The value of the firstName key should be your name as a string. The value of the property state should be your current state or providence of residence as a string. The value of age should be your age as a number. greeter should be a method that returns the string 'Hello! My name is NAMEVALUE and I live in STATEVALUE' with the corresponding values. 
 
 //Code Here
+var me = {
+	firstName:"arthur",
+	state:"texas",
+	age: 25
+}
+function greeter(firstName)
+
 
 //////////////////PROBLEM 12////////////////////
 
@@ -81,7 +100,6 @@ const numbers = [1, 2, 3, 4, 5]
 //////////////////PROBLEM 14 - 18 Setup////////////////////
 
 // Below is an array, myNumbers. You will be using .map, .filter, .reduce and .forEach to manipulate the array in the following problems.
-const myNumbers = [3, 55, 788, 2, 1]
 
 
 //////////////////PROBLEM 14////////////////////
@@ -111,7 +129,7 @@ const myNumbers = [3, 55, 788, 2, 1]
 //////////////////PROBLEM 18////////////////////
 
 // Did you know that George Foreman has five sons named George? Go ahead and change everyone's name in the notGeorge array to George using .map. Store the resulting array in a variable named 'forTheLoveOfGeorge'.
-const notGeorge = ['Louis', 'Ted', 'Bill', 'Sharon', 'Mark', 'Angela']
+
 
 // Code Here
 
@@ -119,12 +137,12 @@ const notGeorge = ['Louis', 'Ted', 'Bill', 'Sharon', 'Mark', 'Angela']
 
 // Using the people array, filter out everyone that isn't a friend into a new array called 'enemies'. Use .filter(). 
 const people = [
-	{ name: 'Matt', friend: true, awesomeLevel: 10 },
-	{ name: 'Matias', friend: true, awesomeLevel: 10 },
-	{ name: 'Catie', friend: false, awesomeLevel: 3 },
-	{ name: 'Samantha', friend: false, awesomeLevel: 4 },
-	{ name: 'Jonathan', friend: true, awesomeLevel: 8 },
-	{ name: 'Josh', friend: true, awesomeLevel: 7 }
+	{ name: 'Landy', friend: true, awesomeLevel: 10 },
+	{ name: 'Jeremy', friend: true, awesomeLevel: 10 },
+	{ name: 'Bart', friend: false, awesomeLevel: 3 },
+	{ name: 'Stephanie', friend: false, awesomeLevel: 6 },
+	{ name: 'Serena', friend: true, awesomeLevel: 8 },
+	{ name: 'George', friend: true, awesomeLevel: 7 }
 ]
 
 // Code Here
